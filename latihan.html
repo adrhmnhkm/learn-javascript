@@ -21,11 +21,49 @@
 
 // reusableFunction();
 
-function isiArgumen(kata1, kata2) {
-    console.log(kata1, kata2);
+// function isiArgumen(kata1, kata2) {
+//     console.log(kata1, kata2);
+// }
+
+// isiArgumen("Hi", "Yasti");
+// var Kaos = "Putih";
+// function myKaos() {
+//     var KaosKu = "Biru"
+//     console.log(KaosKu);
+//     return myKaos;
+//     // return Kaos;
+// }
+
+// Example
+// var sum = 0;
+// function addThree() {
+//   sum = sum + 3;
+// }
+
+// // Only change code below this line
+// function addFive(){
+//   sum = sum + 5;
+// }
+// // Only change code above this line
+// console.log(addThree());
+// addFive();
+// Test Setup
+var testArr = [1,2,3,4,5];
+
+function nextInLine(arr, item) {
+  // Your code here
+arr.push(item);
+var removed = arr.shift();
+  return removed;  // Change this line
 }
 
-isiArgumen("Hi", "Yasti");
+
+
+// Display Code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 8)); // Modify this line to test
+console.log("After: " + JSON.stringify(testArr));
+
 </script>    
 </body>
 </html>
